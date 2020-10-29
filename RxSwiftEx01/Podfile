@@ -6,5 +6,7 @@ target 'RxSwiftEx01' do
   use_frameworks!
 
   # Pods for RxSwiftEx01
-
+  pod 'PromiseKit'
+  pod 'Bolts-Swift'
+  pod 'RxSwift'
 end
