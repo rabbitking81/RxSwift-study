@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6dd-1S-YzV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftEx03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Se-Sa-btx" userLabel="Id Field">
+                                <rect key="frame" x="20" y="106" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kGZ-ec-oLn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-vu-77i" userLabel="Pw Field">
+                                <rect key="frame" x="20" y="178" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XDE-0F-1La"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAk-2n-jut" userLabel="login Button">
+                                <rect key="frame" x="20" y="258" width="374" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3Km-Mo-4l4"/>
+                                </constraints>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgZ-b7-0Se" userLabel="Id Valid View">
+                                <rect key="frame" x="374" y="118" width="10" height="10"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="86Y-Wq-3CU"/>
+                                    <constraint firstAttribute="width" constant="10" id="gNb-mv-JxI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64X-ZE-FO4" userLabel="Pw Valid View">
+                                <rect key="frame" x="374" y="188" width="10" height="10"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="4P8-GQ-439"/>
+                                    <constraint firstAttribute="width" constant="10" id="o3s-LV-2Dw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ihA-vu-77i" firstAttribute="top" secondItem="6Se-Sa-btx" secondAttribute="bottom" constant="20" id="0KL-gU-r8r"/>
+                            <constraint firstItem="ihA-vu-77i" firstAttribute="trailing" secondItem="6Se-Sa-btx" secondAttribute="trailing" id="9WG-tv-FlJ"/>
+                            <constraint firstItem="64X-ZE-FO4" firstAttribute="top" secondItem="ihA-vu-77i" secondAttribute="top" constant="10" id="OXb-IY-iHB"/>
+                            <constraint firstItem="VAk-2n-jut" firstAttribute="trailing" secondItem="ihA-vu-77i" secondAttribute="trailing" id="QzL-wR-Z4v"/>
+                            <constraint firstItem="CgZ-b7-0Se" firstAttribute="trailing" secondItem="6Se-Sa-btx" secondAttribute="trailing" constant="-10" id="aYE-pt-26d"/>
+                            <constraint firstItem="ihA-vu-77i" firstAttribute="leading" secondItem="6Se-Sa-btx" secondAttribute="leading" id="aul-eh-oc3"/>
+                            <constraint firstItem="64X-ZE-FO4" firstAttribute="trailing" secondItem="ihA-vu-77i" secondAttribute="trailing" constant="-10" id="bUj-ci-1ra"/>
+                            <constraint firstItem="VAk-2n-jut" firstAttribute="top" secondItem="ihA-vu-77i" secondAttribute="bottom" constant="30" id="eFC-bT-pfB"/>
+                            <constraint firstItem="6Se-Sa-btx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eza-Qt-qgK"/>
+                            <constraint firstItem="6Se-Sa-btx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="iop-bv-wVg"/>
+                            <constraint firstItem="CgZ-b7-0Se" firstAttribute="top" secondItem="6Se-Sa-btx" secondAttribute="top" constant="10" id="jmv-d2-IL1"/>
+                            <constraint firstItem="VAk-2n-jut" firstAttribute="leading" secondItem="ihA-vu-77i" secondAttribute="leading" id="qYf-EU-xoK"/>
+                            <constraint firstItem="6Se-Sa-btx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zTP-B2-nOk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="lRG-CB-Me3"/>
+                    <connections>
+                        <outlet property="idField" destination="6Se-Sa-btx" id="d71-zw-qj8"/>
+                        <outlet property="idValidView" destination="CgZ-b7-0Se" id="V31-s2-gvx"/>
+                        <outlet property="loginButton" destination="VAk-2n-jut" id="hXf-iB-2n4"/>
+                        <outlet property="pwField" destination="ihA-vu-77i" id="q0P-50-iJE"/>
+                        <outlet property="pwValidView" destination="64X-ZE-FO4" id="z55-ft-vOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3yk-Er-9L7">
+            <objects>
+                <navigationController id="6dd-1S-YzV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="peY-ML-hjr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BSB-wx-DxQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjq-fm-YnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
